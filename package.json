@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/TiannaLopes/contextualize-js/issues"
   },
-  "homepage": "https://github.com/TiannaLopes/contextualize-js#readme",
+"homepage": "https://TiannaLopes.github.io/contextualize-js",
   "dependencies": {
     "date-fns": "^4.1.0",
     "js-cookie": "^3.0.5",

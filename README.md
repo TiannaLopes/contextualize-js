@@ -34,3 +34,7 @@ console.log('Is dark mode enabled?', featureFlag.isEnabled('dark-mode')); // tru
 featureFlag.disable('dark-mode');
 console.log('Is dark mode enabled?', featureFlag.isEnabled('dark-mode')); // false
 ```
+
+## Documentation
+
+Visit the full documentation at [GitHub Pages](https://TiannaLopes.github.io/contextualize-js).
