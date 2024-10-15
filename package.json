@@ -1,6 +1,6 @@
 {
   "name": "contextualize-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A context-aware feature flag system for JavaScript, allowing dynamic feature toggling based on user roles, location, and time.",
   "main": "dist/index.js",
   "scripts": {
