@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contextualize-js | Feature Flag Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #0055a5;
+        }
+
+        pre {
+            background-color: #222;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        a {
+            color: #0055a5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>contextualize-js</h1>
+        <p>A context-aware feature flag system for JavaScript, enabling features based on user roles, location, and
+            time.</p>
+
+        <h2>Installation</h2>
+        <pre><code>npm install contextualize-js</code></pre>
+
+        <h2>Usage Example</h2>
+        <pre><code>
+import FeatureFlag from 'contextualize-js';
+
+const featureFlag = new FeatureFlag();
+
+// Enable a feature with a role and time context
+featureFlag.enable('dark-mode', { role: 'admin', time: '2024-12-31T23:59:59Z' });
+
+console.log('Is dark mode enabled?', featureFlag.isEnabled('dark-mode')); // true
+
+// Disable the feature
+featureFlag.disable('dark-mode');
+console.log('Is dark mode enabled?', featureFlag.isEnabled('dark-mode')); // false
+    </code></pre>
+
+        <h2>API Documentation</h2>
+        <ul>
+            <li><code>enable(flag: string, context: FlagContext): void</code> – Enables a feature with context.</li>
+            <li><code>disable(flag: string): void</code> – Disables the specified feature.</li>
+            <li><code>isEnabled(flag: string): boolean</code> – Checks if the feature is enabled.</li>
+        </ul>
+
+        <h2>Contributing</h2>
+        <p>Contributions are welcome! Please open an issue or submit a pull request on GitHub.</p>
+
+        <footer>
+            <p>Project by <strong>Tianna Lopes</strong></p>
+            <p>
+                <a href="https://github.com/TiannaLopes/contextualize-js">GitHub Repository</a> |
+                <a href="https://www.npmjs.com/package/contextualize-js">npm Package</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
